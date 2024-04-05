@@ -42,6 +42,7 @@ body {
   width: 20px;
 }
 
+
 #about {
   display: flex;
   background-color: #f6d2b8;
@@ -126,6 +127,15 @@ body {
   object-fit: cover;
   padding: 0.5em;
 }
+
+.gallery .gallery-item:hover,
+.gallery .gallery-item:focus-visible {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, 
+              rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, 
+              rgba(43, 34, 0, 0.715) 0px -3px 0px inset;
+}
+
+
 .mg-prev,
 .mg-next {
   width: 30px;
