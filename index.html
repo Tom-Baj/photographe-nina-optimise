@@ -3,40 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="language" content="fr-FR" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="preload"
-      href="./assets/bootstrap/bootstrap.min.css"
-      as="style"
-      onload="this.rel='stylesheet'"
-    />
-    <noscript
-      ><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"
-    /></noscript>
-
-    <link rel="preload" href="./assets/styles/style.min.css" as="style" />
-    <link rel="stylesheet" href="./assets/styles/style.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-    />
-    <script type="application/ld+json">
-      {""}
-    </script>
-
-    <title>Nina Carducci - Photographe Professionnelle à Bordeaux</title>
-    <meta
-      name="description"
-      content="Professionnel à Bordeaux en photographie d'événements et portraits. Capturez vos moments précieux avec professionnalisme. Réservez dès maintenant."
-    />
+    <!-- Opengraph -->
     <meta
       property="og:site_name"
       content="Nina Carducci - Photographe Professionnelle"
@@ -49,7 +17,7 @@
     <meta
       property="og:title"
       content="Nina Carducci - Photographe Professionnelle à Bordeaux : Portraits et
-    Événements"
+  Événements"
     />
     <meta
       property="og:description"
@@ -57,15 +25,15 @@
     />
     <meta
       property="og:image"
-      content="https://tom-baj.github.io/assets/images/opengraph.jpg"
+      content="https://tom-baj.github.io/assets/images/opengraph.webp"
     />
-
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@monCompteTwitter" />
     <meta
       name="twitter:title"
       content="Nina Carducci - Photographe Professionnelle à Bordeaux : Portraits et
-    Événements"
+  Événements"
     />
     <meta
       name="twitter:description"
@@ -79,6 +47,69 @@
       name="twitter:url"
       content="tom-baj.github.io/photographe-nina-optimise/"
     />
+
+    <link
+      rel="preload"
+      href="./assets/bootstrap/bootstrap.min.css"
+      as="style"
+      onload="this.rel='stylesheet'"
+    />
+    <noscript
+      ><link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css"
+    /></noscript>
+    <link rel="preload" href="./assets/styles/style.min.css" as="style" />
+    <link rel="stylesheet" href="./assets/styles/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
+    />
+
+    <title>Nina Carducci - Photographe Professionnelle à Bordeaux</title>
+    <meta
+      name="description"
+      content="Professionnel à Bordeaux en photographie d'événements et portraits. Capturez vos moments précieux avec professionnalisme. Réservez dès maintenant."
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci - Photographe professionnel",
+        "description": "Nina Carducci est une photographe professionnel dans les portraits, mariage, concert, corporate, événement. Situé à Bordeaux.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Bordeaux",
+          "postalCode": "33000",
+          "addressRegion": "Nouvelle-Aquitaine",
+          "addressCountry": "FR"
+        },
+        "telephone": "05 56 67 78 89",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00",
+            "closes": "19:00"
+          }
+        ],
+        "priceRange": "50€ - 400€",
+        "image": "./assets/images/capture.webp",
+        "url": "https://tom-baj.github.io/photographe-nina-optimise/"
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -505,6 +536,47 @@
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </aside>
+      <section id="infos">
+        <div
+          class="container-information"
+          itemscope
+          itemtype="https://schema.org/LocalBusiness"
+        >
+          <span itemprop="name">Nina Carducci - Photographe professionnel</span
+          ><br />
+          <span itemprop="description"
+            ><br />
+            Nina Carducci est une photographe professionnel dans les portraits,
+            mariage, concert, corporate, événement. Situé à Bordeaux. </span
+          ><br />
+
+          <div
+            itemprop="address"
+            itemscope
+            itemtype="http://schema.org/PostalAddress"
+          >
+            <br />
+            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span
+            ><br />
+            <span itemprop="addressLocality">Bordeaux</span><br />
+            <span itemprop="postalCode">33000</span><br />
+            <span itemprop="addressRegion">Nouvelle-Aquitaine</span><br />
+            <span itemprop="addressCountry">FR</span><br />
+          </div>
+
+          <span itemprop="telephone">05 56 67 78 89</span><br />
+          <time itemprop="openingHours" datetime="Mo,Fr 10:00-19h00"
+            >Lundi au Vendredi de 10h à 19h</time
+          ><br />
+          <span itemprop="priceRange">50€ - 400€</span><br />
+          <img itemprop="image" src="./assets/images/capture.webp" /><br />
+          <a
+            itemprop="url"
+            href="https://tom-baj.github.io/photographe-nina-optimise/"
+            >Nina Photographe</a
+          >
+        </div>
+      </section>
     </main>
 
     <section id="contact">
