@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr-FR">
   <head>
     <meta charset="UTF-8" />
     <meta name="language" content="fr-FR" />
@@ -25,8 +25,9 @@
     />
     <meta
       property="og:image"
-      content="https://tom-baj.github.io/assets/images/opengraph.webp"
+      content="https://tom-baj.github.io/assets/images/opengraph.jpg"
     />
+    <meta property="og:locale" content="fr_FR" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@monCompteTwitter" />
@@ -41,11 +42,11 @@
     />
     <meta
       name="twitter:image"
-      content="https://monsiteweb/images/uneimage.jpg"
+      content="https://tom-baj.github.io/assets/images/twitter.jpg"
     />
     <meta
       name="twitter:url"
-      content="tom-baj.github.io/photographe-nina-optimise/"
+      content="https://tom-baj.github.io/photographe-nina-optimise/"
     />
 
     <link
@@ -71,7 +72,8 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
     />
 
-    <title>Nina Carducci - Photographe Professionnelle à Bordeaux</title>
+    <title>Nina Carducci - Photographe Pro à Bordeaux</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <meta
       name="description"
       content="Professionnel à Bordeaux en photographie d'événements et portraits. Capturez vos moments précieux avec professionnalisme. Réservez dès maintenant."
@@ -536,87 +538,46 @@
           <figcaption class="quote__author">- Richard Avedon</figcaption>
         </figure>
       </aside>
-      <section id="infos">
-        <div
-          class="container-information"
-          itemscope
-          itemtype="https://schema.org/LocalBusiness"
-        >
-          <span itemprop="name">Nina Carducci - Photographe professionnel</span
-          ><br />
-          <span itemprop="description"
-            ><br />
-            Nina Carducci est une photographe professionnel dans les portraits,
-            mariage, concert, corporate, événement. Situé à Bordeaux. </span
-          ><br />
-
-          <div
-            itemprop="address"
-            itemscope
-            itemtype="http://schema.org/PostalAddress"
-          >
-            <br />
-            <span itemprop="streetAddress">68 avenue Alsace-Lorraine</span
-            ><br />
-            <span itemprop="addressLocality">Bordeaux</span><br />
-            <span itemprop="postalCode">33000</span><br />
-            <span itemprop="addressRegion">Nouvelle-Aquitaine</span><br />
-            <span itemprop="addressCountry">FR</span><br />
+      <section id="contact">
+        <div class="container">
+          <div class="form-container">
+            <h3>Une question ? Une demande de devis ?</h3>
+            <p>
+              N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24
+              heures
+            </p>
+            <form action="" method="post">
+              <label for="nom">Nom</label>
+              <input type="text" name="nom" id="nom" />
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+              <input type="submit" value="Envoyer" />
+            </form>
           </div>
-
-          <span itemprop="telephone">05 56 67 78 89</span><br />
-          <time itemprop="openingHours" datetime="Mo,Fr 10:00-19h00"
-            >Lundi au Vendredi de 10h à 19h</time
-          ><br />
-          <span itemprop="priceRange">50€ - 400€</span><br />
-          <img itemprop="image" src="./assets/images/capture.webp" /><br />
-          <a
-            itemprop="url"
-            href="https://tom-baj.github.io/photographe-nina-optimise/"
-            >Nina Photographe</a
-          >
+          <div class="picture right">
+            <img
+              src="./assets/images/camera_448.webp"
+              srcset="
+                ./assets/images/camera_413.webp 413w,
+                ./assets/images/camera_388.webp 388w,
+                ./assets/images/camera_448.webp 448w
+              "
+              sizes="(max-width: 650px) 413px,
+            (max-width: 1000px) 388px,
+            448px"
+              alt="Photo artistique d'un appareil photo avec des lumière sombre et rouge"
+            />
+          </div>
         </div>
       </section>
     </main>
-
-    <section id="contact">
-      <div class="container">
-        <div class="form-container">
-          <h3>Une question ? Une demande de devis ?</h3>
-          <p>
-            N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures
-          </p>
-          <form action="" method="post">
-            <label for="nom">Nom</label>
-            <input type="text" name="nom" id="nom" />
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" />
-            <label for="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input type="submit" value="Envoyer" />
-          </form>
-        </div>
-        <div class="picture right">
-          <img
-            src="./assets/images/camera_448.webp"
-            srcset="
-              ./assets/images/camera_413.webp 413w,
-              ./assets/images/camera_388.webp 388w,
-              ./assets/images/camera_448.webp 448w
-            "
-            sizes="(max-width: 650px) 413px,
-            (max-width: 1000px) 388px,
-            448px"
-            alt="Photo artistique d'un appareil photo avec des lumière sombre et rouge"
-          />
-        </div>
-      </div>
-    </section>
     <script src="./assets/bootstrap/bootstrap.bundle.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
